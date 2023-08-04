@@ -1,21 +1,10 @@
 #include <cs50.h>
 #include <stdio.h>
-#include <string.h>
 
 int main(void)
 {
-    string names[] = {"Carter", "David"};
-    string numbers[] = {"+1-617-495-1000", "+1-949-468-2750"};
-
-    string name = get_string("Name: ");
-    for (int x = 0; x < 2; x++)
-    {
-        if (strcmp(names[x], name) == 0)
-        {
-            printf("Found: %s\n", numbers[x]);
-            return 0;
-        }
-    }
-    printf("Not found\n");
-    return 1;
+    string n = get_string("What's your name? ");
+    int a = get_int("What's your age? ");
+    long p = get_long("State your mobile number: ");
+    printf("Details are as follows: %s, %i, %li\n", n, a, p);
 }
