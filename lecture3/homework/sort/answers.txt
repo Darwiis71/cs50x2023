@@ -1,0 +1,66 @@
+sort1 uses: bubble sort
+
+How do you know?:
+Characteristics of bubble sort:
+Lower bound n in the order of n speed as shown in sorted5000 where it compares for largest value
+for the two numbers side by side, nothing to swap since the right side of two numbers is always
+greater
+
+
+For n attempts of 20
+sort 1 on random5000 on n attempts produce a mean of 0.080s
+For lower bound Ω it yielded 0.056s
+For upper bound O it yielded 0.156s
+
+    For sorted5000 on n = 20, mean = 0.030s
+    Ω = 0.020s
+    O = 0.080s
+
+        For reversed5000 on n = 20, mean = 0.080s
+        Ω = 0.050s
+        O = 0.134s
+
+
+sort2 uses: merge sort
+
+
+How do you know?:
+Characteristics of merge sort:
+Fastest for all due to logn speed in all bounds
+
+For n attempts of 20
+sort 2 on random5000 on n attempts produce a mean of 0.035s
+For lower bound Ω it yielded 0.029s
+For upper bound O it yielded 0.098s
+
+    For sorted5000 on n = 20, mean = 0.025s
+    Ω = 0.018s
+    O = 0.050s
+
+        For reversed5000 on n = 20, mean = 0.030s
+        Ω = 0.025s
+        O = 0.075s
+
+sort3 uses: selection sort
+
+How do you know?:
+Characteristics of selection sort
+Lower bound abd upper bound in the order of n^2 because its always comparing between two numbers,
+and swapping immediately whereby smallest number of the leftmost. It goes through the array multiple times
+to search for lowest value so if reverse or sorted, it still double check for smallest value resulting
+in same time.
+
+
+For n attempts of 20
+sort 3 on random5000 on n attempts produce a mean of 0.058s
+For lower bound Ω it yielded 0.042s
+For upper bound O it yielded 0.0108s
+
+    For sorted5000 on n = 20, mean = 0.050s
+    Ω = 0.040s
+    O = 0.201s
+
+        For reversed5000 on n = 20, mean = 0.050s
+        Ω = 0.039s
+        O = 0.085s
+
