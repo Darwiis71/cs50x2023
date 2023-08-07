@@ -46,9 +46,9 @@ sort3 uses: selection sort
 How do you know?:
 Characteristics of selection sort
 Lower bound abd upper bound in the order of n^2 because its always comparing between two numbers,
-and swapping immediately whereby smallest number of the leftmost. It goes through the array multiple times
-to search for lowest value so if reverse or sorted, it still double check for smallest value resulting
-in same time.
+and swapping after searching through the array once, between the smallest number and first element of the array. 
+It goes through the array multiple times to search for lowest value so if reverse or sorted, 
+it still double check for smallest value across the array resulting in same time.
 
 
 For n attempts of 20
